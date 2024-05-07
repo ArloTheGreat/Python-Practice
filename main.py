@@ -1,3 +1,5 @@
+#The users score
+score = 1
 #Ask the user their name and store it
 name = input("What's your name?")
 #Greet the user and introduce the quiz
@@ -9,90 +11,91 @@ answer = input("Do you like Crocodiles?")
 #Tell them if the correct answer
 if answer == "Yes":
     print("That's cool")
-if answer == "No":
+    score *= 5
+elif answer == "":
+    print("TRY ANSWERING THE NEXT QUESTION")
+else:
     print("...ok")
-if answer != "Yes" or "No":
-    print("Thats cool")
 #Ask the user question 2
 answer2 = input("Do you like Sharks?")
 #Tell them if the correct answer
-if answer2 == "Yes":
-    print("Nice answer")
-if answer2 == "No":
+if answer == "Yes":
+    print("Nice answer" )
+elif answer == "":
+    print("TRY ANSWERING THE NEXT QUESTION")
+else:
     print("...ok")
-if answer2 != "Yes" "no":
-    print("Thats cool")
 #Ask the user question 3
-answer3 = input("Do you like Rats?")
+answer = input("Do you like Rats?")
 #Tell them if the correct answer
-if answer3 == "No":
+if answer == "No":
     print("Rats are bad")
-if answer3 == "Yes":
+elif answer == "":
+    print("TRY ANSWERING THE NEXT QUESTION")
+else:
     print("...why")
-if answer3 != "Yes" "no":
-    print("Thats cool")
 #Ask the user question 4
-answer4 = input("Do you like Dogs?")
+answer = input("Do you like Dogs?")
 #Tell them if the correct answer
-if answer4 == "Yes":
+if answer == "Yes":
     print("You are correct")
-if answer4 == "No":
+elif answer == "":
+    print("TRY ANSWERING THE NEXT QUESTION")
+else:
     print("You are wrong")
-if answer4 != "Yes" "no":
-    print("Thats cool")
 #Ask the user question 5
-answer5 = input("Do you like Cats?")
+answer = input("Do you like Cats?")
 #Tell them if the correct answer
-if answer5 == "Yes":
+if answer == "Yes":
     print("You are correct")
-if answer5 == "No":
+elif answer == "":
+    print("TRY ANSWERING THE NEXT QUESTION")
+else:
     print("You are wrong")
-if answer5 != "Yes" "no":
-    print("Thats cool")
 #Ask the user question 6
-answer6 = input("Do you like Snakes?")
+answer = input("Do you like Snakes?")
 #Tell them if the correct answer
-if answer6 == "Yes":
+if answer == "Yes":
     print("Snakes are very noodle like")
-if answer6 == "No":
+elif answer == "":
+    print("TRY ANSWERING THE NEXT QUESTION")
+else:
     print("Snakes are very noodle like")
-if answer6 != "Yes" "no":
-    print("Thats cool")
 #Ask the user question 7
-answer7 = input("Do you like Pigs?")
+answer = input("Do you like Pigs?")
 #Tell them if the correct answer
-if answer7 == "Yes":
+if answer == "Yes":
     print("Bacon, bacon, bacon")
-if answer7 == "No":
+elif answer == "":
+    print("TRY ANSWERING THE NEXT QUESTION")
+else:
     print("Bacon, bacon, bacon")
-if answer7 != "Yes" "no":
-    print("Thats cool")
 #Ask the user question 8
-answer8 = input("Do you like Lions?")
+answer = input("Do you like Lions?")
 #Tell them if the correct answer
-if answer8 == "Yes":
+if answer == "Yes":
     print("Lions are very dangerous")
-if answer8 == "No":
+elif answer == "":
+    print("TRY ANSWERING THE NEXT QUESTION")
+else:
     print("That's cool")
-if answer8 != "Yes" "no":
-    print("Thats cool")
 #Ask the user question 9
-answer9 = input("Do you like Birds?")
+answer = input("Do you like Birds?")
 #Tell them if the correct answer
-if answer9 == "Yes":
+if answer == "Yes":
     print("ok.")
-if answer9 == "No":
+elif answer == "":
+    print("TRY ANSWERING THE NEXT QUESTION")
+else:
     print("ok.")
-if answer9 != "Yes" "no":
-    print("Thats cool")
 #Ask the user question 10
-answer10 = input("Do you like Frogs?")
+answer = input("Do you like Frogs?")
 #Tell them if the correct answer
-if answer10 == "Yes":
+if answer == "Yes":
     print("Very bouncy boys")
-if answer10 == "No":
+elif answer == "":
+    print("Dumb")
+else:
     print("Very bouncy boys")
-if answer10 != "Yes" "no":
-    print("Thats cool")
 #End the quiz
 print("Thanks for playing, goodbye")
