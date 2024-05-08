@@ -128,5 +128,5 @@ else:
     score += 10
 print("Frogs are my favorite.")
 #End the quiz
-print("Thanks for playing, goodbye")
-print("you gots a score of", score, "good job")
+print("Thanks for playing, {}, you gots a score of, {}, good job, and i hope you have a great day".format(name, score))
+print("-Bob")
