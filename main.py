@@ -9,6 +9,8 @@ print("welcome to this quiz,", name)
 print("My name is Bob")
 print("This quiz is about animals.")
 print("Please answer the questions using a simple 'Yes' or 'No'")
+#List of my questions
+QUESTIONS = ("Do you like Crocodiles?", "Do you like Sharks?", "Do you like Molerats?", "Do you like Dogs?", "Do you like Cats?", "Do you like Snakes?", "Do you like Pigs?")
 #Good and Bad commejts
 GOOD_COMMENT = ["Good job", "Keep it up", "Fantastic"]
 BAD_COMMENT = ["At least try to answer correctly next time", "Try using more then 0.0001% of your brain", "Dont give up"] 
