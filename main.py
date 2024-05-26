@@ -1,19 +1,32 @@
 #random
 import random
+random.randint(1,3)
+#question format
+QUESTION_FORMAT = "{}\nA. {} B. {} C. {} D.{}"
 #The users score
 score = 1
 #Ask the user their name and store it
 name = input("What's your name?")
-#Greet the user and introduce the quiz
-print("welcome to this quiz,", name)
-print("My name is Bob")
+#Greet the user and introduce the quize
 print("This quiz is about animals.")
 print("Please answer the questions using a simple 'Yes' or 'No'")
 #List of my questions
-QUESTIONS = ("Do you like Crocodiles?", "Do you like Sharks?", "Do you like Molerats?", "Do you like Dogs?", "Do you like Cats?", "Do you like Snakes?", "Do you like Pigs?")
+QUESTIONS = ["What animal has the most population?"]
+OPTIONS = [["Fish", "Insects", "Human", "Birds"]]
+SHORT_OPTIONS = ["a", "b", "c", "d"]
+ANSWERS = [1]
 #Good and Bad commejts
 GOOD_COMMENT = ["Good job", "Keep it up", "Fantastic"]
-BAD_COMMENT = ["At least try to answer correctly next time", "Try using more then 0.0001% of your brain", "Dont give up"] 
+BAD_COMMENT = ["Maybe next time", "You got this", "Dont give up"] 
+#Ask the user question 0
+answer = input(QUESTION_FORMAT.format(QUESTIONS[0], OPTIONS[0][0], OPTIONS[0][1], OPTIONS[0][2], OPTIONS[0][3]))
+#Tell them if the correct answer
+if answer == OPTIONS [0][ANSWERS[0]] or answer == SHORT_OPTIONS[ANSWERS[0]]:
+elif answer in SHORT_OPTIONS or answer in OPTIONS[0]:
+    print("Wrong!")
+    print(random.choice(BAD_COMMENT))
+else:
+    print("That wasn't an option")
 #Ask the user question 1
 answer = input("Do you like Crocodiles?").lower()
 #Tell them if the correct answer
