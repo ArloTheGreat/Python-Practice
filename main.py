@@ -21,9 +21,9 @@ BAD_COMMENT = ["Maybe next time", "You got this", "Dont give up"]
 #Ask the user question 0
 answer = input(QUESTION_FORMAT.format(QUESTIONS[0], OPTIONS[0][0], OPTIONS[0][1], OPTIONS[0][2], OPTIONS[0][3]))
 #Tell them if the correct answer
-if answer == OPTIONS [0][ANSWERS[0]] or answer == SHORT_OPTIONS[ANSWERS[0]]:
+if answer == OPTIONS[0][ANSWERS[0]] or answer == SHORT_OPTIONS[ANSWERS[0]]:
 elif answer in SHORT_OPTIONS or answer in OPTIONS[0]:
-    print("Wrong!")
+    print("Wrong")
     print(random.choice(BAD_COMMENT))
 else:
     print("That wasn't an option")
