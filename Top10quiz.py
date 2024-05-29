@@ -24,3 +24,7 @@ def getLives():
 #--- MAIN CODE ---
 intro()
 lives = getLives()
+
+score = 0
+while lives > 0:
+    answer = input("Name one of the top 10 most popular sports in the world:\n").lower()
